@@ -27,10 +27,10 @@ body {
 }
 
 .img h2 {
-  font-family: "wix-madefor-display", sans-serif;
+  font-family: "wix madefor display", sans-serif;
   color: #fff;
-  text-transform: capitalize;
-  font-size: 5rem;
+  font-size: 8rem;
+  text-transform: uppercase;
   text-align: center;
   text-shadow: 8px 8px 8px rgba(0, 0, 0, 0.372);
 }
@@ -71,11 +71,33 @@ nav a:hover, nav a:focus {
   background-color: #7251B5;
   display: flex;
   gap: 1em;
+  padding-bottom: 5em;
+  padding-top: 3em;
+}
+.welcome h3 {
+  color: #fff;
+  font-family: "wix madefor display", sans-serif;
+  font-size: 3.5rem;
+}
+
+.welcome p {
+  color: #fff;
+  font-size: 1.75rem;
+  font-weight: lighter;
+  padding-right: 23em;
 }
 
 .flavours {
   background-color: #0E1215;
   display: flex;
+  gap: 1em;
+  padding-bottom: 5em;
+  padding-top: 3em;
+}
+
+.flavours h3 {
+  font-family: "wix madefor display", sans-serif;
+  font-size: 3.5rem;
 }
 
 .team {
