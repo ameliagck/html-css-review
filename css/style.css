@@ -29,6 +29,9 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  
+  display: flex;
+  align-items: center;
 }
 
 .img h1 {
@@ -42,7 +45,7 @@ body {
 
 header {
   display: flex;
-  color: #DEC9E9;;
+  color: #DEC9E9;
   justify-content: space-between;
   align-items: center; 
 }
@@ -53,7 +56,7 @@ nav ul {
 }
 
 nav ul li {
-  padding: 0 1.5em;
+  padding-left: 1.25em;
 }
 
 a {
@@ -89,7 +92,7 @@ nav a:hover, nav a:focus {
   color: #fff;
   font-size: 1.75rem;
   font-weight: lighter;
-  padding-right: 23em;
+  max-width: 50%;
 }
 
 .flavours {
@@ -101,9 +104,29 @@ nav a:hover, nav a:focus {
   justify-content: left;
 }
 
+.flavours ol {
+  list-style: none;
+  padding-left: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flavours li {
+  width: 50%;
+  padding-right: 15%;
+}
+
 .flavours h2 {
   font-family: "wix madefor display", sans-serif;
   font-size: 3.5rem;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 2.5em;
+  gap: 1em;
 }
 
 .team {
@@ -115,18 +138,44 @@ nav a:hover, nav a:focus {
   padding-top: 3em;
 }
 
-.team h2 {
-  font-family: "wix madefor display", sans-serif;
-  font-size: 3.5rem;
-  color: #fff;
-}
-
+.team h2, 
 .team p {
   color: #fff;
-  font-size: 1.75rem;
+  max-width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.team h2 {
+  font-size: 3.5em;
+  font-family: "wix madefor display", sans-serif;
+}
+
+.team p {  
+  font-size: 1.5rem;
   font-weight: lighter;
-  padding-left: 8em;
-  padding-right: 8em;
+}
+
+.team-grid article {
+  background-color: #6647A6;
+  border-radius: 20px;
+  padding: 2em 0;
+  text-align: center;
+}
+
+.team-grid article img {
+  width: 80px;
+  border-radius: 50%;
+  filter: grayscale(100%);
+}
+
+.team-grid h3 {
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.team-grid article p {
+  margin-top: 0;
 }
 
 footer {
